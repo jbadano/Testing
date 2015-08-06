@@ -1,0 +1,41 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+sourceCompatibility = 1.5
+version = '1.0'
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'JBehave Test',
+                   'Implementation-Version': version
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+	compile 'org.springframework:spring-core:4.2.0.RELEASE'
+	compile 'log4j:log4j:1.2.17'
+	compile 'commons-logging:commons-logging:1.2'
+	compile 'org.springframework:spring-context:4.2.0.RELEASE'	
+    compile group: 'commons-collections', name: 'commons-collections', version: '3.2'
+    testCompile 'org.springframework:spring-test:4.2.0.RELEASE'
+    testCompile 'org.jbehave:jbehave-spring:4.0.2'
+  	testCompile 'org.jbehave:jbehave-core:4.0.2'
+
+}
+
+sourceSets.test.resources.srcDir 'src/test/java'
+
+test {
+    systemProperties 'property': 'value'
+}
+
+uploadArchives {
+    repositories {
+       flatDir {
+           dirs 'repos'
+       }
+    }
+}
