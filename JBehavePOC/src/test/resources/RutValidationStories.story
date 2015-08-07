@@ -1,3 +1,6 @@
+Meta:
+@regression
+
 Narrative:
 In order to validate the rut of a customer
 As a customer

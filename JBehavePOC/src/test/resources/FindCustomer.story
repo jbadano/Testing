@@ -1,3 +1,6 @@
+Meta:
+@regression
+
 Narrative:
 In order to find customers by companies
 As a user

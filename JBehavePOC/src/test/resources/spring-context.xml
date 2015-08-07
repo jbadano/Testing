@@ -10,12 +10,13 @@
 
  <context:annotation-config />
  <context:component-scan base-package="com.nisum"/>
- 
- <bean class="org.jbehave.core.configuration.spring.SpringStoryReporterBuilder" init-method="withDefaultFormats">
+  
+  <bean class="org.jbehave.core.configuration.spring.SpringStoryReporterBuilder" init-method="withDefaultFormats">
         <property name="formats">
             <list>				
-                <value>CONSOLE</value>				
+                <value>HTML</value>				
             </list>
         </property>
+        
   </bean>
 </beans>
