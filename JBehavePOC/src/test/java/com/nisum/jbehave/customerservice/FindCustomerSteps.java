@@ -39,7 +39,7 @@ public class FindCustomerSteps {
 
     @When("Start to find by company")
     public void whenStartFindByCompany(){ 
-    	
+    	this.customers = customerService.findCustomerByCompany(this.company);
     }
         
     @Then("The customers obtained are $customerTable")
