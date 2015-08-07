@@ -30,4 +30,13 @@ public class CustomerServiceImpl implements CustomerService{
 		return customerDAO.findCustomerByCompany(company);
 	}
 
+	public CustomerDAO getCustomerDAO() {
+		return customerDAO;
+	}
+
+	public void setCustomerDAO(CustomerDAO customerDAO) {
+		this.customerDAO = customerDAO;
+	}
+
+	
 }

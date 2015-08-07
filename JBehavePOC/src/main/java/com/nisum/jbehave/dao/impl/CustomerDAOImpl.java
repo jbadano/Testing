@@ -34,7 +34,7 @@ public class CustomerDAOImpl implements CustomerDAO{
 		Customer customer3 = new Customer();
 		customer3.setRut("5610902");
 		customer3.setDv("1");
-		customer3.setCompany("othercompany");
+		customer3.setCompany("otherCompany");
 		customer3.setName("Juan");
 		customer3.setEmail("email2@nisum.com");
 		customer3.setLastName("Perez");
