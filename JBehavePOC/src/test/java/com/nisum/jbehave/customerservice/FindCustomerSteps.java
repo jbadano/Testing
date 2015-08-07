@@ -10,8 +10,6 @@ import org.jbehave.core.annotations.Named;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 import org.jbehave.core.model.ExamplesTable;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
 import org.springframework.stereotype.Component;
 
 import com.nisum.jbehave.dao.CustomerDAO;
@@ -22,11 +20,7 @@ import com.nisum.jbehave.service.CustomerService;
 public class FindCustomerSteps {
 	
 	@Resource(name = "customerService")
-	@InjectMocks
 	CustomerService customerService;
-	
-	@Mock
-	CustomerDAO customerDAO;
 	
 	private List<Customer> customers;
 	private String company;
