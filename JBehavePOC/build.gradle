@@ -19,7 +19,7 @@ dependencies {
 	compile 'log4j:log4j:1.2.17'
 	compile 'commons-logging:commons-logging:1.2'
 	compile 'org.springframework:spring-context:4.2.0.RELEASE'	
-    compile group: 'commons-collections', name: 'commons-collections', version: '3.2'
+    compile 'commons-collections:commons-collections:3.2'
     testCompile 'org.springframework:spring-test:4.2.0.RELEASE'
     testCompile 'org.jbehave:jbehave-spring:4.0.2'
   	testCompile 'org.jbehave:jbehave-core:4.0.2'

@@ -7,7 +7,7 @@ Scenario: No Customers finded by company
 Given A company name company1
 When Start to find by company
 Then The customers obtained are
-
+|rut|dv|name|lastName|email|company|
 
 Scenario: No Customers finded by company
 Given A company name nisum

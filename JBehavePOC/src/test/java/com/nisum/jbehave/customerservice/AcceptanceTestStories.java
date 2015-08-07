@@ -11,8 +11,6 @@ import org.jbehave.core.io.CodeLocations;
 import org.jbehave.core.io.StoryFinder;
 import org.jbehave.core.junit.JUnitStories;
 import org.jbehave.core.junit.spring.SpringAnnotatedEmbedderRunner;
-import org.jbehave.core.steps.CandidateSteps;
-import org.jbehave.core.steps.InstanceStepsFactory;
 import org.junit.runner.RunWith;
 
 @RunWith(SpringAnnotatedEmbedderRunner.class)
